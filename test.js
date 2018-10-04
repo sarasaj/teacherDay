@@ -163,10 +163,9 @@ $(document).on("click", "#savepng", function() {
   img.src = canvas.toDataURL({
    format: 'jpg',
    quality: 0.92,
-   width: 200,
-    height: 150
-});
-
+   width: 500,
+    height: 500
+  }
 
   img.src.download = "mypainting1";
 
