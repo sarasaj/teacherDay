@@ -12,15 +12,15 @@ var el = document.getElementById('res');
 // Populate the fontFamily select
 var select = document.getElementById("font-family");
 //append typography to images div for drag and drop
-for (var i = 1; i <= 25; i++) {
-  $('#images').append('<img src="eid designs/25 typography/MKH_'+i+'-01.png" class="typo img-responsive" onclick="addTypo(this)"></img>');
-}
+// for (var i = 1; i <= 25; i++) {
+//   $('#images').append('<img src="eid designs/25 typography/MKH_'+i+'-01.png" class="typo img-responsive" onclick="addTypo(this)"></img>');
+// }
 //append bg images
-for (var i = 1; i <= 16; i++) {
-  $('#backgrounds').append('<img onclick="changeIt(this)" class="bg img-responsive" src="eid designs/backgrounds/'+i+'.jpg" />');
+for (var i = 1; i <= 3; i++) {
+  $('#backgrounds').append('<img onclick="changeIt(this)" class="bg img-responsive" src="backgrounds/'+i+'.jpg" />');
 }
 
-fabric.Image.fromURL('eid designs/backgrounds/12.jpg', function(myImg) {
+fabric.Image.fromURL('backgrounds/2.jpg', function(myImg) {
  var img1 = myImg.set({
   left: 0, top: 0 ,width:500,height:500,
   lockMovementX:true,
