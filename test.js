@@ -16,7 +16,7 @@ var select = document.getElementById("font-family");
 //   $('#images').append('<img src="eid designs/25 typography/MKH_'+i+'-01.png" class="typo img-responsive" onclick="addTypo(this)"></img>');
 // }
 //append bg images
-for (var i = 1; i <= 3; i++) {
+for (var i = 1; i <= 7; i++) {
   $('#backgrounds').append('<img onclick="changeIt(this)" class="bg img-responsive" src="backgrounds/'+i+'.jpg" />');
 }
 
