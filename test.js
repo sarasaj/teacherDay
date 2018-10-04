@@ -165,7 +165,7 @@ $(document).on("click", "#savepng", function() {
    quality: 0.92,
    width: 500,
     height: 500
-  }
+  });
 
   img.src.download = "mypainting1";
 
