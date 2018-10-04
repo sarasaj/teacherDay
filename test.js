@@ -173,7 +173,12 @@ $(document).on("click", "#savepng", function() {
 // download png
 document.getElementById('download').addEventListener('click', function() {
     var link = this;
-    link.href = canvas.toDataURL();
+    link.href = canvas.toDataURL({
+     format: 'jpg',
+     quality: 0.92,
+     width: 500,
+      height: 500
+    });
     link.download = "test.jpg";
 }, false);
 
