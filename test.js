@@ -161,8 +161,8 @@ $(document).on("click", "#savepng", function() {
    newTab.document.body.append(img);
   }
   img.src = canvas.toDataURL({
-   format: 'jpeg',
-   quality: 0.8,
+   format: 'jpg',
+   quality: 0.92,
    width: 200,
     height: 150
 });
