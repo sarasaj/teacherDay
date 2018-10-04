@@ -160,18 +160,13 @@ $(document).on("click", "#savepng", function() {
   img.onload = function(){
    newTab.document.body.append(img);
   }
-  img.src = canvas.toDataURL('image/jpeg');
-var v = 0
-    for(var i = 0; i < 100; i++ ){
+  img.src = canvas.toDataURL({
+   format: 'jpeg',
+   quality: 0.8,
+   width: 200,
+    height: 150
+});
 
-        v += 0.01;
-        x = parseFloat((v).toFixed(2))
-        var test = c.toDataURL('image/jpeg', x);
-
-        if(test == url){
-            console.log('The default value is: ' + x);
-        }
-    }
 
   img.src.download = "mypainting1";
 
